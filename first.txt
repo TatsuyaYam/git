@@ -1,4 +1,5 @@
-Gitの練習用
-変更を加える。section3-13
-・git add
+Gitの各コマンド
+・git status
+・git add [ファイル名]
 ・git commit
+・git rm [ファイル名]
