@@ -3,3 +3,5 @@ Gitの各コマンド
 ・git add [ファイル名]
 ・git commit
 ・git rm [ファイル名]
+・git log
+・git diff
