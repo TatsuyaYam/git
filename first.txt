@@ -3,5 +3,8 @@ Gitの各コマンド
 ・git add [ファイル名]
 ・git commit
 ・git rm [ファイル名]
+・git rm --cached [ファイル名]
 ・git log
 ・git diff
+・git reset HEAD [ファイル名]
+・git checkout [ファイル名]
