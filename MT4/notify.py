@@ -14,7 +14,7 @@ def PythonNotify(message):
 number_pre=-1
 while True:
     #ファイルパスは自分のものを使いましょう
-    file = open("C:\Program Files (x86)\XMTrading MT4\tester\files\MQL4\Files\Line.txt", 'r')
+    file = open("C:/Program Files (x86)/XMTrading MT4/tester/files/MQL4/Files/Line.txt", 'r')
     data = file.read()  # ファイル終端まで全て読む
     file.close()
     lines = data.split('\n') # 改行で区切る
