@@ -4,7 +4,7 @@ import time
 def PythonNotify(message):
     # 諸々の設定
     line_notify_api = 'https://notify-api.line.me/api/notify'
-    line_notify_token = 'oPXbtFrRpcfCDdjTOeEkztbHVjxHUqKCLhLogo'
+    line_notify_token = 'rK8Q93cc1g4bOsvvYCvrs4ZU1COEcC4Y9Z5BqAZ02Gb'
 
     headers = {'Authorization': 'Bearer ' + line_notify_token}
     # メッセージ
@@ -23,5 +23,6 @@ while True:
     #乱数部分が異なるとき
     if(number!=number_pre):
         PythonNotify(lines[1]+"\n"+lines[2])
+        print('Update')
     time.sleep(10)
     number_pre=number
