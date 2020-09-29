@@ -13,8 +13,10 @@ def PythonNotify(message):
 
 number_pre=-1
 while True:
-    #ファイルパスは自分のものを使いましょう
-    file = open("C:/Program Files (x86)/XMTrading MT4/tester/files/MQL4/Files/Line.txt", 'r')
+    #ファイルパス（本番用）
+    file = open("C:\Program Files (x86)\XMTrading MT4\MQL4\Files/Line.txt", 'r')
+    #ファイルパス（デモ用）
+    #file = open("C:/Program Files (x86)/XMTrading MT4/tester/files/MQL4/Files/Line.txt", 'r')
     data = file.read()  # ファイル終端まで全て読む
     file.close()
     lines = data.split('\n') # 改行で区切る
@@ -22,7 +24,7 @@ while True:
 
     #乱数部分が異なるとき
     if(number!=number_pre):
-        PythonNotify(lines[1]+"\n"+lines[2])
+        PythonNotify(lines[1]+"\n"+lines[2]+"\n"+lines[3])
         print('Update')
     time.sleep(10)
     number_pre=number
